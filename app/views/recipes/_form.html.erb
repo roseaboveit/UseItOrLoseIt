@@ -14,26 +14,38 @@
   <div>
     
   </div>
-    <%= form.label :name, "Recipe Name:" %>
-    <%= form.text_field :name %>
-    <%= form.label :servings, "Servings:" %>
-    <%= form.number_field :servings %>
-    <%= form.label :claimed_minutes_prep, "Book Prep Time (Min):" %>
-    <%= form.number_field :claimed_minutes_prep %>
-    <%= form.label :claimed_minutes_cook, "Book Cook Time (Min):" %>
-    <%= form.number_field :claimed_minutes_cook %>
-    <%= form.label :claimed_minutes_wait, "Book Wait Time (Min):" %>
-    <%= form.number_field :claimed_minutes_wait %>
-    <%= form.label :tested_minutes_prep, "Tested Prep Time (Min):" %>
-    <%= form.number_field :tested_minutes_prep %>
-    <%= form.label :tested_minutes_cook, "Tested Cook Time (Min):" %>
-    <%= form.number_field :tested_minutes_cook %>
-    <%= form.label :tested_minutes_wait, "Tested Wait Time (Min):" %>
-    <%= form.number_field :tested_minutes_wait %>
-    <%= form.label :spoons, "Spoon Rating:" %>
-    <%= form.number_field :spoons %>
-    <%= form.label :description, "Description:" %>
-    <%= form.text_area :description %>
+    <div>
+      <%= form.label :name, "Recipe Name:" %>
+      <%= form.text_field :name %>
+      <%= form.label :source, "Recipe Source Location:" %>
+      <%= form.text_field :source %>
+    </div>
+    <div>
+      <%= form.label :description, "Description:" %>
+      <%= form.text_area :description %>
+    </div>
+    <div>
+      <%= form.label :servings, "Servings:" %>
+      <%= form.number_field :servings %>
+      <%= form.label :spoons, "Spoon Rating:" %>
+      <%= form.number_field :spoons %>
+    </div>
+    <div>
+      <%= form.label :claimed_minutes_prep, "Book Prep Time (Min):" %>
+      <%= form.number_field :claimed_minutes_prep %>
+      <%= form.label :claimed_minutes_cook, "Book Cook Time (Min):" %>
+      <%= form.number_field :claimed_minutes_cook %>
+      <%= form.label :claimed_minutes_wait, "Book Wait Time (Min):" %>
+      <%= form.number_field :claimed_minutes_wait %>
+    </div>
+    <div>
+      <%= form.label :tested_minutes_prep, "Tested Prep Time (Min):" %>
+      <%= form.number_field :tested_minutes_prep %>
+      <%= form.label :tested_minutes_cook, "Tested Cook Time (Min):" %>
+      <%= form.number_field :tested_minutes_cook %>
+      <%= form.label :tested_minutes_wait, "Tested Wait Time (Min):" %>
+      <%= form.number_field :tested_minutes_wait %>
+    </div>
   <div>
     <%= form.submit %>
   </div>
